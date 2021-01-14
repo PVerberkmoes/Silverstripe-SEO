@@ -7,7 +7,9 @@
     
     <loc>{$Top.SitemapHost}$Link</loc>
     <lastmod>$SitemapDate</lastmod>
-    <changefreq>$ChangeFrequency</changefreq>
+		<% if $ChangeFrequency %>
+			<changefreq>$ChangeFrequency</changefreq>
+		<% end_if %>
     <priority>$Priority</priority>
 
     <% loop $SitemapImages %>
